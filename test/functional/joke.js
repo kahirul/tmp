@@ -119,12 +119,10 @@ describe('joke', () => {
         .get('/api/jokes/extract/words')
         .expect(200);
 
-      res.body.should.contain('how');
-      res.body.should.contain('drunk');
-      res.body.should.contain('screenshots');
-      res.body.should.contain('programmer');
-      res.body.should.contain('while');
-      res.body.should.contain('milk');
+      res.body.should.have.property('debugging');
+      res.body.should.have.property('sql');
+      res.body.sql.should.equal(1);
+      res.body.from.should.equal(2);
     });
   });
 });

@@ -58,11 +58,7 @@ module.exports = function main(app) {
   });
   Joke.getWordsAll = async () => {
     const jokes = await Joke.find({});
-    const words = [];
-    jokes.forEach((joke) => {
-      joke.words().forEach((word) => words.push(word))
-    });
 
-    return words;
+    return Joke.frequency(jokes);
   };
 };
