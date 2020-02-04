@@ -1,0 +1,11 @@
+{
+  "_meta": {
+    "sources": ["loopback/common/models", "loopback/server/models", "./models", "../app/models"],
+    "mixins": ["loopback/common/mixins", "loopback/server/mixins", "../app/mixins", "./mixins"],
+    "apis": ["../app/controllers"]
+  },
+  "Joke": {
+    "dataSource": "memory",
+    "public": true
+  }
+}

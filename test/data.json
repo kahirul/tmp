@@ -1,0 +1,44 @@
+{
+  "jokes": [
+    {
+      "id": 1,
+      "text": "How does a computer get drunk? It takes screenshots."
+    },
+    {
+      "id": 2,
+      "text": "The best thing about a Boolean is that even if you are wrong, you are only off by a bit."
+    },
+    {
+      "id": 3,
+      "text": "Have you heard of that new band \"1023 Megabytes\"? They're pretty good, but they don't have a gig just yet."
+    },
+    {
+      "id": 4,
+      "text": "I just got fired from my job at the keyboard factory. They told me I wasn't putting in enough shifts."
+    },
+    {
+      "id": 5,
+      "text": "Thanks to autocorrect, 1 in 5 children will be getting a visit from Satan this Christmas."
+    },
+    {
+      "id": 6,
+      "text": "A Programmer was walking out of door for work, his wife said \"while you're out, buy some milk\" and he never came home."
+    },
+    {
+      "id": 7,
+      "text": "\"Debugging\" is like being the detective in a crime drama where you are also the murderer."
+    },
+    {
+      "id": 8,
+      "text": "If doctors were like software engineers, they would say things like \"Have you tried killing yourself and being reborn?\""
+    },
+    {
+      "id": 9,
+      "text": "An SQL query goes into a bar, walks up to two tables and asks: \"Can I join you?\""
+    },
+    {
+      "id": 10,
+      "text": "A programmer had a problem. He thought to himself, \"I know, I'll solve it with threads!\". has Now problems. two he"
+    }
+  ]
+}

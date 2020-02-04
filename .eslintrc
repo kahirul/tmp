@@ -1,0 +1,8 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "strict": "off",
+    "no-use-before-define": ["error", { "variables": true, "functions": false, "classes": false }],
+    "no-param-reassign": "off"
+  }
+}

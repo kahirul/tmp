@@ -1,0 +1,31 @@
+{
+  "name": "wb-simple-api",
+  "description": "A simple API",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node .",
+    "test": "NODE_ENV=development mocha \"test/**/*.js\" --timeout 10000 --exit"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "eslint-plugin-import": "^2.20.1",
+    "helmet": "^3.21.2",
+    "loopback": "^2.42.0",
+    "loopback-boot": "^2.28.0",
+    "loopback-component-explorer": "^2.7.0",
+    "loopback-connector": "4.10.1",
+    "loopback-datasource-juggler": "^2.59.3",
+    "strong-error-handler": "^3.4.0",
+    "uuid": "^3.4.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "mocha": "^7.0.1",
+    "supertest": "^4.0.2"
+  },
+  "license": "UNLICENSED"
+}
