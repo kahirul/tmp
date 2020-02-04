@@ -21,7 +21,10 @@ module.exports = function main(app) {
     accepts: [{ arg: 'data', type: 'object', http: { source: 'body' } }],
     returns: { root: true },
   });
-  Joke.createJoke = async (data) => Joke.create(data);
+  Joke.createJoke = async (data) => {
+    const jokes = await Joke.find({where: {text: data.text}});
+    return jokes[0] || Joke.create(data);
+  };
 
   Joke.remoteMethod('updateJoke', {
     http: { path: '/', verb: 'put' },
@@ -55,7 +58,11 @@ module.exports = function main(app) {
   });
   Joke.getWordsAll = async () => {
     const jokes = await Joke.find({});
-    const words = jokes.map((joke) => joke.words());
+    const words = [];
+    jokes.forEach((joke) => {
+      joke.words().forEach((word) => words.push(word))
+    });
+
     return words;
   };
 };
